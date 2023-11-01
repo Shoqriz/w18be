@@ -22,7 +22,7 @@ const connectDB = async () => {
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({ origin: 'https://sz-w18.netlify.app/', credentials: true }));
+app.use(cors({ origin: 'https://sz-w18.netlify.app', credentials: true }));
 app.use('/', indexRoutes);
 
 connectDB().then(() => {
